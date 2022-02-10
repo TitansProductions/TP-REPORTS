@@ -193,6 +193,13 @@ RegisterNUICallback('submitReport', function(data, cb)
 
 		TriggerServerEvent("tp-reports:submitReport", data.reason, data.description)
 
+		for _,id in pairs(GetActivePlayers()) do
+
+		    local ped = GetPlayerPed(id)
+		    local ids = GetPlayerServerId(NetworkGetEntityOwner(ped))
+	  
+		    TriggerServerEvent('tp-reports:sendAvailableStaffReport', ids)
+		end
 	else
 		ESX.ShowNotification(reason)
 	end
