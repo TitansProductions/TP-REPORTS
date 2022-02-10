@@ -66,6 +66,20 @@ AddEventHandler('tp-reports:submitReport', function(reason, description)
 
 end)
 
+RegisterServerEvent('tp-reports:sendAvailableStaffReport') 
+AddEventHandler('tp-reports:sendAvailableStaffReport', function(online)
+
+	if Config.WhitelistedGroups[getGroup(online)] ~= nil then
+
+		TriggerClientEvent('chat:addMessage', online, {
+			template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(255,69,0, 0.7); border-radius: 3px;">{0}</div>',
+			args = { "[REPORT] - A new report has been submitted. "}
+		})
+
+	end
+
+end)
+
 
 RegisterServerEvent('tp-reports:teleportTo')
 AddEventHandler('tp-reports:teleportTo', function(target_source)
@@ -99,6 +113,24 @@ ESX.RegisterServerCallback("tp-reports:fetchUserGroup", function(source, cb)
 		cb("user")
 	end
 end)
+
+-- load and set users group
+function getGroup(source)
+	local _source = source
+	local player = ESX.GetPlayerFromId(_source)
+
+	if player ~= nil then
+        local playerGroup = player.getGroup()
+
+		if playerGroup ~= nil then 
+			return playerGroup
+		else
+			return "user"
+		end
+	else
+		return "user"
+	end
+end
 
 -- METHOD FOR SENDING MESSAGES ON CHANNELS
 function sendToDiscord(webhook, name, message, color)
