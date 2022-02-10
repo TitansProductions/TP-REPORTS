@@ -1,0 +1,226 @@
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	overflow: hidden;
+	display: none;
+}
+
+.background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: rgba(50, 50, 50, 0.6);
+}
+
+.dialog {
+	font-family: "Prototype", serif;
+	position: absolute;
+	font-size: 22px;
+
+	width: 800px;
+	height: 800px;
+	left: 40%;
+	top: 30%; 
+	margin-left: -150px;
+	margin-top: -150px;
+	background-color: rgba(27, 27, 27, 0.719);
+	background-image: url("https://i.imgur.com/VoEMn4o.jpg");
+    background-repeat: no-repeat;
+    background-size: 100;
+	overflow: hidden;
+}
+
+#report{
+	width: 90%;
+	height: 65%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(182, 3, 18, 0.253);
+  } 
+
+#report_main{
+	width: 90%;
+	height: 40%;
+	color: white;
+	display: inline-block;
+	flex: 0 0 auto;
+	max-height: 100%;
+	margin: 1.8%;
+	/* background-size: 100%; */
+}
+
+#report_det{
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.041);
+	border: 1px solid rgba(182, 3, 18, 0.253);
+	box-shadow: 0px 4px 10px rgba(182, 3, 18, 0.253);
+	height: 105%;
+}
+
+#report_name{
+	color: white;
+	font-size: 17px;
+}
+
+#report_teleport{
+	background-color: rgba(170, 39, 39, 0.712);
+	color: rgba(175, 175, 172, 0.712);
+	width: fit-content;
+	border-radius: 0px;
+	width: 100px;
+	font-size: 12px;
+	margin-left: 82%;
+	margin-top: 25px;
+}
+
+#report_teleport:hover{
+	cursor: pointer;
+	background-color: rgba(51, 54, 51, 0.685);
+}
+
+#report_state{
+	background-color: rgba(170, 39, 39, 0.712);
+	color: rgba(175, 175, 172, 0.712);
+	width: fit-content;
+	border-radius: 0px;
+	width: 100px;
+	font-size: 12px;
+	margin-left: 82%;
+	margin-top: 5px;
+}
+
+#report_state:hover{
+	cursor: pointer;
+	background-color: rgba(51, 54, 51, 0.685);
+}
+
+#report_player_report_name_title{
+	color: rgba(179, 179, 19, 0.712);
+	font-size: 17px;
+}
+
+#report_player_report_id_title{
+	color: rgba(179, 179, 19, 0.712);
+	font-size: 17px;
+}
+
+#report_player_report_reason{
+	color: rgba(175, 175, 172, 0.712);
+	font-size: 17px;
+}
+
+#report_player_report_description{
+	color: rgba(175, 175, 172, 0.712);
+	font-size: 14px;
+}
+
+#report_player_report_dnt{
+	color: rgba(170, 39, 39, 0.712);
+	font-size: 12px;
+	margin-right: 85%;
+}
+
+#report_player_report_state{
+	color: rgba(170, 39, 39, 0.712);
+	margin-top: 5px;
+	font-size: 14px;
+	margin-right: 83.5%;
+}
+
+input[type=text] {
+	font-family: "Prototype", serif;
+	font-size: 15px;
+	width: 90%;
+	color: rgba(255, 255, 255, 0.719);
+	height: 50px;
+	text-align: center;
+	background-color: rgb(27, 27, 27, 0.719);
+	border-color: rgb(58, 58, 58, 0.719);
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+select[type=field] {
+	font-family: "Prototype", serif;
+	font-size: 15px;
+	width: 90%;
+	color: rgba(255, 255, 255, 0.719);
+	height: 50px;
+	text-align: center;
+	background-color: rgb(27, 27, 27, 0.719);
+	border-color: rgb(58, 58, 58, 0.719);
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+button {
+	font-family: "Prototype", serif;
+	display: block;
+	margin-top: 0px;
+	padding: 18px;
+	background-color: #922222b9;
+	border: 0;
+	color: rgba(255, 255, 255, 0.719);
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+
+	font-size: 25px;
+}
+
+h1 {
+	display: block;
+	margin-top: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	color: rgba(255, 255, 255, 0.719);
+	width: 95%;
+	text-align: center;
+}
+
+h4 {
+	display: block;
+	margin-top: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	color: rgba(173, 173, 173, 0.486);
+	width: 100%;
+	text-align: center;
+}
+
+p {
+	display: block;
+	margin-top: 0px;
+	margin-left: 4%;
+	padding: 10px;
+	color: rgba(121, 121, 121, 0.719);
+	width: 50%;
+	font-size: 14px;
+}
+
+
+
+.radio {
+	font-family: "Prototype", serif;
+	text-align: center;
+	font-size: 15px;
+	color: rgba(255, 255, 255, 0.719);
+}
+
+@font-face {
+	font-family: "Prototype";
+	src: url("../font/Prototype.ttf");
+  }
+
+@media only screen and (max-width: 1060px) {
+	.dialog {
+		left: 0%;
+	}
+}
