@@ -22,9 +22,9 @@ body {
 	font-size: 22px;
 
 	width: 800px;
-	height: 1100px;
+	height: 1000px;
 	left: 40%;
-	top: 20%; 
+	top: 17%; 
 	margin-left: -150px;
 	margin-top: -150px;
 	background-color: rgba(27, 27, 27, 0.719);
@@ -221,7 +221,7 @@ button {
 	margin-left: 5%;
 	margin-right: 5%;
 
-	font-size: 25px;
+	font-size: 18px;
 }
 
 h1 {
