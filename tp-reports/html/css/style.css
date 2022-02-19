@@ -224,6 +224,14 @@ button {
 	font-size: 18px;
 }
 
+
+button:hover{
+
+	cursor: pointer;
+	background-color: rgb(124, 0, 0);
+	box-shadow: 0px 0px 15px rgb(124, 0, 0);
+}
+
 h1 {
 	display: block;
 	margin-top: 5px;
